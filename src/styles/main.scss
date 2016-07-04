@@ -1,7 +1,43 @@
-.header {
-  background-image: url('../assets/img/simon_bg_large.jpg');
+$mobile: 320px;
+$tablet: 740px;
+$desktop: 980px;
+$wide: 1300px;
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  margin: 0;
 }
 
 h1 {
-  color:red;
+  text-align: center;
+}
+
+.banner {
+  display: flex;
+  background: url('../assets/img/simon_bg_large.jpg') no-repeat center right fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+.banner__content {
+  width: 90%;
+  margin: 1em auto;
+  padding: 1em;
+  background-color: rgba(255, 255, 255, .55);
+  border-radius: .3em;
+}
+
+@media screen and (min-width: $tablet) {
+  .banner {
+    height: 70vh;
+  }
+
+  .banner__content {
+    margin: 5em auto;
+    padding: 5em;
+  }
 }
