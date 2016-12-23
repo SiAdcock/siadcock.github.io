@@ -1,8 +1,13 @@
 .parallax {
-  height: 100vh;
   perspective: 1px;
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
 }
 
 .parallax__layer {

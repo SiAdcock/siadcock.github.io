@@ -12,10 +12,14 @@ h1 {
   font-size: 3em; }
 
 .parallax {
-  height: 100vh;
   perspective: 1px;
   overflow-x: hidden;
   overflow-y: auto; }
+
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d; }
 
 .parallax__layer {
   position: absolute;
@@ -44,3 +48,9 @@ h1 {
     height: 100vh; }
   .banner__content {
     padding: 5em; } }
+
+@media screen and (min-width: 740px) {
+  .about__content {
+    display: flex; }
+    .about__content > div {
+      flex: 1 1 auto; } }

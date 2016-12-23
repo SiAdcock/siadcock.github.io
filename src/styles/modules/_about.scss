@@ -1,0 +1,25 @@
+.about {
+
+}
+
+.about__background {
+
+}
+
+.about__content {
+
+}
+
+.about__content__xp {
+
+}
+
+@media screen and (min-width: $tablet) {
+  .about__content {
+    display: flex;
+
+    & > div {
+      flex: 1 1 auto;
+    }
+  }
+}
