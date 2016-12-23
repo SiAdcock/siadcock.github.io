@@ -1,48 +1,25 @@
-@import url(https://fonts.googleapis.com/css?family=Lato);
+@import "common/variables";
+@import "common/fonts";
+@import "common/base";
+@import "layout/parallax";
 
-$mobile: 320px;
-$tablet: 740px;
-$desktop: 980px;
-$wide: 1300px;
-
-
-*{
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Lato',serif;
-  font-size: 16px;
-  margin: 0;
-}
-
-h1 {
-  text-align: center;
-  font-size: 3em;
-}
-
-.banner {
-  display: flex;
+.banner__background {
   background: url('../assets/img/simon_bg_large.jpg') no-repeat center right fixed;
   background-size: cover;
-  height: 100vh;
 }
 
 .banner__content {
-  width: 90%;
-  margin: 1em auto;
-  padding: 1em;
-  background-color: rgba(255, 255, 255, .65);
-  border-radius: .3em;
+  padding: 0;
+  background-color: #ffffff;
+  top: 75%;
 }
 
 @media screen and (min-width: $tablet) {
   .banner {
-    height: 70vh;
+    height: 100vh;
   }
 
   .banner__content {
-    margin: 5em auto;
     padding: 5em;
   }
 }

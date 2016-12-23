@@ -8,7 +8,7 @@ gulp.task('serve', ['sass', 'copy:img'], () => {
       baseDir: './'
     }
   });
-  gulp.watch('src/styles/**.scss', ['sass']);
+  gulp.watch('src/styles/**/*.scss', ['sass']);
   gulp.watch('index.html', ['html']);
 });
 gulp.task('build', ['sass', 'copy:img']);
