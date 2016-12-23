@@ -57,10 +57,11 @@ h1 {
 
 .community {
   margin: 0 auto;
-  height: 50vh; }
+  height: 75vh; }
 
 .community__background {
-  background-color: #ff0000; }
+  background: url("../assets/img/community_bg_large.jpg") no-repeat center right fixed;
+  background-size: cover; }
 
 .community__content {
   width: 80%;
