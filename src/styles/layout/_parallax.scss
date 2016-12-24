@@ -1,4 +1,5 @@
 .parallax {
+  height: 100vh;
   perspective: 1px;
   overflow-x: hidden;
   overflow-y: auto;
@@ -19,9 +20,11 @@
 }
 
 .parallax__layer--back {
-  transform: translate(-1px);
+  transform: translateZ(-1px) scale(2);
+  z-index: 3;
 }
 
 .parallax__layer--front {
-  transform: translate(0px);
+  transform: translateZ(0);
+  z-index: 4;
 }

@@ -1,17 +1,17 @@
 .community {
   margin: 0 auto;
-  height: 75vh;
-
+  z-index: 4;
+  height: 100vh;
 }
 
 .community__background {
-  background: url('../assets/img/community_bg_large.jpg') no-repeat center right fixed;
+  background: url('../assets/img/community_bg_large.jpg') no-repeat;
   background-size: cover;
 }
 
 .community__content {
   width: 80%;
-  margin: 0 auto;
+  margin: 100px auto;
   background-color: rgba(255, 255, 255, .65);
   max-height: 30vh;
 }

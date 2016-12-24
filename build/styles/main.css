@@ -12,6 +12,7 @@ h1 {
   font-size: 3em; }
 
 .parallax {
+  height: 100vh;
   perspective: 1px;
   overflow-x: hidden;
   overflow-y: auto; }
@@ -29,10 +30,15 @@ h1 {
   right: 0; }
 
 .parallax__layer--back {
-  transform: translate(-1px); }
+  transform: translateZ(-1px) scale(2);
+  z-index: 3; }
 
 .parallax__layer--front {
-  transform: translate(0px); }
+  transform: translateZ(0);
+  z-index: 4; }
+
+.banner {
+  z-index: 3; }
 
 .banner__background {
   background: url("../assets/img/simon_bg_large.jpg") no-repeat center right fixed;
@@ -49,6 +55,13 @@ h1 {
   .banner__content {
     padding: 5em; } }
 
+.about {
+  z-index: 5;
+  height: 100vh; }
+
+.about__content {
+  background-color: #ffffff; }
+
 @media screen and (min-width: 740px) {
   .about__content {
     display: flex; }
@@ -57,15 +70,16 @@ h1 {
 
 .community {
   margin: 0 auto;
-  height: 75vh; }
+  z-index: 4;
+  height: 100vh; }
 
 .community__background {
-  background: url("../assets/img/community_bg_large.jpg") no-repeat center right fixed;
+  background: url("../assets/img/community_bg_large.jpg") no-repeat;
   background-size: cover; }
 
 .community__content {
   width: 80%;
-  margin: 0 auto;
+  margin: 100px auto;
   background-color: rgba(255, 255, 255, 0.65);
   max-height: 30vh; }
 
