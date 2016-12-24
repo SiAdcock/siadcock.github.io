@@ -1,14 +1,6 @@
-.parallax {
-  height: 100vh;
-  perspective: 1px;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
 .parallax__group {
   position: relative;
   height: 100vh;
-  transform-style: preserve-3d;
 }
 
 .parallax__layer {
@@ -19,12 +11,25 @@
   right: 0;
 }
 
-.parallax__layer--back {
-  transform: translateZ(-1px) scale(2);
-  z-index: 3;
-}
+@media screen and (min-width: $desktop) {
+  .parallax {
+    height: 100vh;
+    perspective: 1px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
 
-.parallax__layer--front {
-  transform: translateZ(0);
-  z-index: 4;
+  .parallax__group {
+    transform-style: preserve-3d;
+  }
+
+  .parallax__layer--back {
+    transform: translateZ(-1px) scale(2);
+    z-index: 3;
+  }
+
+  .parallax__layer--front {
+    transform: translateZ(0);
+    z-index: 4;
+  }
 }
