@@ -1,23 +1,18 @@
 .community {
   margin: 0 auto;
+  position: relative;
 }
 
 .community__background {
   background: url('../assets/img/community_bg_large.jpg') no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 
 .community__content {
-  width: 80%;
-  margin: 100px auto;
-  background-color: rgba(255, 255, 255, .65);
-  max-height: 30vh;
-}
-
-@media screen and (min-width: $tablet) {
-  .community__content {
-    width: 50%;
-  }
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 @media screen and (min-width: $desktop) {
