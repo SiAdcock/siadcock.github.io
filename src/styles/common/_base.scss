@@ -8,7 +8,25 @@ body {
   margin: 0;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   text-align: center;
+}
+
+h1 {
   font-size: 3em;
+}
+
+h2 {
+  font-size: 2.2em;
+}
+
+h3 {
+  font-size: 1.8em;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
 }

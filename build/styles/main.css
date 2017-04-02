@@ -7,9 +7,23 @@ body {
   font-size: 16px;
   margin: 0; }
 
+h1,
+h2,
+h3 {
+  text-align: center; }
+
 h1 {
-  text-align: center;
   font-size: 3em; }
+
+h2 {
+  font-size: 2.2em; }
+
+h3 {
+  font-size: 1.8em; }
+
+ul {
+  list-style-type: none;
+  padding: 0; }
 
 .parallax__group {
   position: relative;
@@ -86,3 +100,15 @@ h1 {
 @media screen and (min-width: 740px) {
   .community__content {
     width: 50%; } }
+
+.factbox {
+  text-align: center;
+  border: 1px solid #efefef;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #f8f8f8;
+  box-shadow: 3px 3px 20px 0px #efefef; }
+
+.factbox__fact {
+  padding: 10px 0; }
