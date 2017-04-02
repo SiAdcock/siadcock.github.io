@@ -1,5 +1,6 @@
 .topnav {
   z-index: 100;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: #ffffff;
