@@ -74,16 +74,22 @@ ul {
 .about__content {
   background-color: #ffffff; }
 
+.about__content__container {
+  max-width: 1000px;
+  margin: 0 auto; }
+
 @media screen and (min-width: 740px) {
   .about__content {
-    display: flex; }
-    .about__content > div {
+    padding: 3em 0; }
+  .about__content__container {
+    display: flex;
+    align-items: flex-start; }
+    .about__content__container > div {
       flex: 1 1 auto; } }
 
 @media screen and (min-width: 980px) {
   .about {
-    z-index: 5;
-    height: 100vh; } }
+    z-index: 5; } }
 
 .community {
   margin: 0 auto;

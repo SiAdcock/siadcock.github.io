@@ -2,9 +2,19 @@
   background-color: #ffffff;
 }
 
+.about__content__container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 @media screen and (min-width: $tablet) {
   .about__content {
+    padding: 3em 0;
+  }
+
+  .about__content__container {
     display: flex;
+    align-items: flex-start;
 
     & > div {
       flex: 1 1 auto;
@@ -15,6 +25,5 @@
 @media screen and (min-width: $desktop) {
   .about {
     z-index: 5;
-    height: 100vh;
   }
 }
