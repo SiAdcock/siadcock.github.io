@@ -8,19 +8,9 @@
   height: 80vh;
 }
 
-.banner__content {
-  padding: 0;
-  background-color: #ffffff;
-  top: 75%;
-}
-
 @media screen and (min-width: $tablet) {
   .banner {
-    height: 100vh;
-  }
-
-  .banner__content {
-    padding: 5em;
+    height: 80vh;
   }
 }
 
