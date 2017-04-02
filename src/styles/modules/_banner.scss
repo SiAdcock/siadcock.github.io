@@ -5,6 +5,7 @@
 .banner__background {
   background: url('../assets/img/simon_bg_large.jpg') no-repeat center right fixed;
   background-size: cover;
+  height: 80vh;
 }
 
 .banner__content {
@@ -20,5 +21,11 @@
 
   .banner__content {
     padding: 5em;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .banner__background {
+    height: 100vh;
   }
 }

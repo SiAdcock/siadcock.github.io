@@ -1,7 +1,5 @@
 .community {
   margin: 0 auto;
-  z-index: 4;
-  height: 100vh;
 }
 
 .community__background {
@@ -19,5 +17,12 @@
 @media screen and (min-width: $tablet) {
   .community__content {
     width: 50%;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .community {
+    z-index: 4;
+    height: 100vh;
   }
 }
